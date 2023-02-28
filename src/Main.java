@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -32,6 +33,19 @@ public class Main {
     }
     if (speedLimit <= 60) {
         System.out.println("Ваша скорость в пределах 60 км в час, можно ехать спокойно, штраф не придёт.");
+    }
+    }
+    public static void task4 () {
+        System.out.println("Задача 4");
+    int yearsOld =25;
+    if (yearsOld >= 2 && yearsOld <= 6) {
+        System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в детский сад.");
+    } else if (yearsOld > 6 && yearsOld <= 18) {
+        System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в школу.");
+    } else if (yearsOld > 18 && yearsOld <= 24) {
+        System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в университет.");
+    } else if (yearsOld > 24) {
+        System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить на работу.");
     }
     }
 }

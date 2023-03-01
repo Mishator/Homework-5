@@ -8,8 +8,9 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
-    public static void task1 () {
+   public static void task1 () {
         System.out.println("Задача 1");
         int age = 18;
         if (age >= 18) {
@@ -80,6 +81,33 @@ public class Main {
             System.out.println("Есть ещё " + (standingPlace - standingUsed) + " стоячих мест.");
         } else if (standingUsed == standingPlace) {
             System.out.println("Стоячих мест нет");
+        }
+    }
+    public static void task7 () {
+        System.out.println("Задача 7");
+        int one = 28;
+        int two = -11;
+        int three = 118;
+        if (one > two) {
+            if (one >= three) {
+                System.out.println("Максимальное число  " + one);
+            } else {
+                System.out.println("Максимальное число  " + three);
+            }
+        }else if (two > one) {
+            if (two >= three) {
+                System.out.println("Максимальное число  " + two);
+            } else  {
+                System.out.println("Максимальное число  " + three);
+            }
+        } else {
+            if (one > three) {
+                System.out.println("Максимальное число  " + one);
+            } else if (three > one) {
+                System.out.println("Максимальное число  " + three);
+            } else {
+                System.out.println("Все 3 числа равны");
+            }
         }
     }
 }

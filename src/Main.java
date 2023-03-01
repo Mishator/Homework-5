@@ -1,9 +1,12 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -47,5 +50,17 @@ public class Main {
     } else if (yearsOld > 24) {
         System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить на работу.");
     }
+    }
+    public static void task5 () {
+        System.out.println("Задача 5");
+        int yearsOld = 15;
+        if (yearsOld <= 5) {
+            System.out.println("Если возраст ребёнка равен " + yearsOld + ", то ему нельзя кататься на атракционе.");
+        } else if (yearsOld > 5 && yearsOld <= 14) {
+            System.out.println("Если возраст ребёнка равен " + yearsOld + ", то ему можно кататьтся на атракционе, но только в сопровождении взрослого.");
+        } else if (yearsOld > 14) {
+            System.out.println("Если возрост ребёнка равен " + yearsOld + ", то он может кататься на атракционе без сопровождения взрослого.");
+        }
+
     }
 }
